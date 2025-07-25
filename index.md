@@ -1,3 +1,10 @@
 # Bienvenido a mi portafolio de ciberseguridad
 
-Este es mi sitio personal donde publico mis prácticas, CTFs, scripting, detección de malware, y más.
+Soy SR10SCAN. Aquí publico mis prácticas de:
+- 🔐 Hacking ético
+- 🧪 Laboratorios de análisis
+- 🎯 CTFs y writeups
+- 🧠 Scripts de automatización
+- 📓 Blog técnico
+
+Explora y aprende conmigo.
