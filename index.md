@@ -57,7 +57,7 @@
 
 ## 📬 Contacto
 
-- GitHub: [SR10SCAN](https://github.com/SR10SCAN)
+Puedes comunicarte conmigo dejando un mensaje en la pestaña de [Discussions](https://github.com/SR10SCAN/SR10SCAN.github.io/discussions) de este repositorio.
 
 ---
 
