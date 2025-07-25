@@ -18,9 +18,7 @@
 
 > Resolución de retos de CTFs: reversing, web, pwn, forense, criptografía, etc.
 
-- [TryHackMe – Mr Robot Walkthrough](ctf/tryhackme_mrrobot.md)
-- [Hack The Box – Lame (Writeup)](ctf/htb_lame.md)
-- [PicoCTF – Binary Exploitation 101](ctf/pico_binary101.md)
+- [TryHackMe – Mr Robot Walkthrough](ctf/mr-robot-tryhackme.md)
 
 ---
 
