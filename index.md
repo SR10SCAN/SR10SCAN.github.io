@@ -8,10 +8,9 @@
 
 > Proyectos prácticos y entornos de prueba donde exploro herramientas, técnicas y conceptos.
 
-- [Análisis de tráfico con Wireshark](labs/wireshark_lab.md)
-- [Sniffing y spoofing con Bettercap](labs/bettercap_sniffing.md)
-- [Configuración de firewall con iptables](labs/iptables_basics.md)
-- [Creación de honeypots en Linux](labs/honeypot_linux.md)
+- [Análisis de tráfico con Wireshark](labs/wireshark-analysis.md)
+- [Sniffing con Bettercap](labs/bettercap-sniffing.md)
+
 
 ---
 
