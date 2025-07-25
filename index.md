@@ -58,8 +58,6 @@
 ## 📬 Contacto
 
 - GitHub: [SR10SCAN](https://github.com/SR10SCAN)
-- Twitter/X: [@SR10SCAN](https://x.com/SR10SCAN)
-- Email: sr10scan@protonmail.com
 
 ---
 
