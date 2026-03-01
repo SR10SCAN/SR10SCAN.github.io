@@ -1,6 +1,6 @@
 # 👨‍💻 Portafolio de Ciberseguridad – SR10SCAN
 
-¡Bienvenido a mi sitio! Soy un apasionado por la ciberseguridad ofensiva y defensiva. Aquí documento todo lo que voy aprendiendo, resolviendo y creando.
+¡Bienvenido a mi sitio! Aprende conmigo ciberseguridad ofensiva y defensiva. Aquí documento todo lo que voy aprendiendo, resolviendo y creando.
 
 ---
 
