@@ -15,7 +15,7 @@ Soluciones detalladas para los niveles de Git y escapes de Shell en Bandit.
 **Concepto Clave:** Bypass de `.gitignore` y Validación mediante Git Hooks.
 
 ### 📝 Objetivo del Nivel
-El servidor requiere que enviemos un archivo específico al repositorio remoto para validar nuestra identidad y entregarnos la siguiente credencial.
+El servidor requiere que enviemos un archivo específico al repositorio remoto para validar nuestra identidad y entregarnos la siguiente credencial.<br>
 
 
 * **Archivo:** key.txt
@@ -28,12 +28,12 @@ El servidor requiere que enviemos un archivo específico al repositorio remoto p
 
 #### 1. Clonar el repositorio
 Primero, descargamos el repositorio a nuestra máquina local y
-como buen practica creamos una carpeta en el cual clonaremos "repo"..
+como buen practica creamos una carpeta en el cual clonaremos "repo"<br>
 `git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
 cd repo`
 
 #### 2. Creación del archivo de acceso
-Creamos el archivo key.txt con el contenido exacto requerido por el reto..
+Creamos el archivo key.txt con el contenido exacto requerido por el reto<br>
 `echo "May I come in?" > key.txt`
 
 #### 3. Forzar el seguimiento del archivo (Bypass de .gitignore)
