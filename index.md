@@ -29,7 +29,7 @@ El servidor requiere que enviemos un archivo específico al repositorio remoto p
 #### 1. Clonar el repositorio
 Primero, descargamos el repositorio a nuestra máquina local:
 como buen practica creamos una carpeta en el cual clonaremos 'repo'.
-#git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+>>git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
 cd repo
 
 #### 2. Creación del archivo de acceso
@@ -46,7 +46,7 @@ Nota: La contraseña para el comando push es la misma que usamos para clonar: f*
 
 git commit -m "Añadiendo la llave de acceso"
 git push origin master
-...
+---
 ### finalmente tendremos la contraseña:'3****hqyAlVBEZpVb6LYStshZoq****K'
 Aunque el comando git push devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor
 ---
