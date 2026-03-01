@@ -44,8 +44,8 @@ Al intentar añadir el archivo con git add, el sistema lo rechazará porque exis
 Realizamos el commit local y subimos los cambios al servidor<br>
 
 Nota: La contraseña para el comando push es la misma que usamos para clonar: f***2xb7bRyFmAvQYQGEqsbhVy*****y<br>
-`git commit -m "Añadiendo la llave de acceso"<br>
-git push origin master`
+`git commit -m "Añadiendo la llave de acceso"`<br>
+`git push origin master`
 ---
 ### finalmente tendremos la contraseña:3****hqyAlVBEZpVb6LYStshZoq****K<br>
 Aunque el comando git push devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor
