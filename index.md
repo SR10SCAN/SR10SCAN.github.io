@@ -41,14 +41,25 @@ Al intentar añadir el archivo con git add, el sistema lo rechazará porque exis
 `git add -f key.txt`
 
 #### 4. Confirmación y envío (Push)
-Realizamos el commit local y subimos los cambios al servidor<br>
 
-Nota: La contraseña para el comando push es la misma que usamos para clonar: f*5S2xb7bRyFmAvQYQGEqs*********y<br>
-`git commit -m "Añadiendo la llave de acceso"`<br>
-`git push origin master`
+Realizamos el commit local y subimos los cambios al servidor.
+
+> 🔐 **Nota:** La contraseña para el comando push es la misma que usamos para clonar:  
+> `f*5S2xb7bRyFmAvQYQGEqs*********y`
+
+```bash
+git commit -m "Añadiendo la llave de acceso"
+git push origin master
+```
+
 ---
-### finalmente tendremos la contraseña:3*9RfhqyAlVBEZpVb6LYStsh*******K<br>
-Aunque el comando git push devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor
+
+### 🔑 Finalmente tendremos la contraseña:
+
+`3*9RfhqyAlVBEZpVb6LYStsh*******K`
+
+Aunque el comando `git push` devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor.
+
 ---
 ## 📓 Blog Técnico
 
