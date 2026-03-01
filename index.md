@@ -28,8 +28,8 @@ El servidor requiere que enviemos un archivo específico al repositorio remoto p
 
 #### 1. Clonar el repositorio
 Primero, descargamos el repositorio a nuestra máquina local:
-como buen practica creamos una carpeta en el cual clonaremos 'repo'.
->´git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo´
+como buen practica creamos una carpeta en el cual clonaremos "repo".
+>git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
 cd repo
 
 #### 2. Creación del archivo de acceso
