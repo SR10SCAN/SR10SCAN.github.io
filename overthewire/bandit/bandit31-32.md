@@ -1,28 +1,29 @@
-## Overthewire
+## OvertheWire
+
 # 🚩 OverTheWire: Bandit Writeups (30-31)
 
-Soluciones detalladas para los niveles de Git y escapes de Shell en Bandit.
+Detailed solutions for Git levels and shell escape challenges in Bandit.
 
 ---
 
 ## 🚩 Bandit Level 31 → 32
-**Concepto Clave:** Bypass de `.gitignore` y Validación mediante Git Hooks.
+**Key Concept:** Bypassing `.gitignore` and validation through Git Hooks.
 
-### 📝 Objetivo del Nivel
-El servidor requiere que enviemos un archivo específico al repositorio remoto para validar nuestra identidad y entregarnos la siguiente credencial.<br>
+### 📝 Level Goal
 
+The server requires us to submit a specific file to the remote repository to validate our identity and obtain the next credential.<br>
 
-* **Archivo:** key.txt
-* **Contenido:** May I come in?
-* **Rama:** master
+* **File:** key.txt  
+* **Content:** May I come in?  
+* **Branch:** master  
 
 ---
 
-### 🛠️ Paso a Paso para la Resolución
+### 🛠️ Step-by-Step Solution
 
-#### 1. Clonar el repositorio
+#### 1. Clone the Repository
 
-Primero, descargamos el repositorio a nuestra máquina local y como buena práctica creamos una carpeta donde clonaremos `repo`.
+First, we download the repository to our local machine. As a best practice, we create a directory where we will clone `repo`.
 
 ```bash
 git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
@@ -31,9 +32,9 @@ cd repo
 
 ---
 
-#### 2. Creación del archivo de acceso
+#### 2. Create the Access File
 
-Creamos el archivo `key.txt` con el contenido exacto requerido por el reto.
+We create the `key.txt` file with the exact content required by the challenge.
 
 ```bash
 echo "May I come in?" > key.txt
@@ -41,34 +42,34 @@ echo "May I come in?" > key.txt
 
 ---
 
-#### 3. Forzar el seguimiento del archivo (Bypass de .gitignore)
+#### 3. Force File Tracking (Bypass `.gitignore`)
 
-Al intentar añadir el archivo con `git add`, el sistema lo rechazará porque existe una regla en el archivo `.gitignore` que ignora todos los archivos `.txt`.  
+When attempting to add the file with `git add`, the system will reject it because there is a rule in the `.gitignore` file that ignores all `.txt` files.  
 
-Para saltarnos esta restricción usamos el parámetro `-f` (force).
+To bypass this restriction, we use the `-f` (force) parameter.
 
 ```bash
 git add -f key.txt
 ```
 
-#### 4. Confirmación y envío (Push)
+#### 4. Commit and Push
 
-Realizamos el commit local y subimos los cambios al servidor.
+We perform a local commit and push the changes to the server.
 
-> 🔐 **Nota:** La contraseña para el comando push es la misma que usamos para clonar:  
+> 🔐 **Note:** The password used for the `push` command is the same one used to clone the repository:  
 > `f*5S2xb7bRyFmAvQYQGEqs*********y`
 
 ```bash
-git commit -m "Añadiendo la llave de acceso"
+git commit -m "Adding access key"
 git push origin master
 ```
 
 ---
 
-### 🔑 Finalmente tendremos la contraseña:
+### 🔑 Final Result
 
 `3*9RfhqyAlVBEZpVb6LYStsh*******K`
 
-Aunque el comando `git push` devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor.
+Even if the `git push` command returns an error at the end, the password will appear in the terminal output due to the server configuration.
 
 ---
