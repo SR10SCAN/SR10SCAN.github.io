@@ -4,41 +4,8 @@
 
 ---
 
-## 🧪 Laboratorios Técnicos
-
-> Proyectos prácticos y entornos de prueba donde exploro herramientas, técnicas y conceptos.
-
-- [Análisis de tráfico con Wireshark](labs/wireshark-analysis.md)
-- [Sniffing con Bettercap](labs/bettercap-sniffing.md)
-
-
----
-
-## 🎯 Capture The Flag (CTF)
-
-> Resolución de retos de CTFs: reversing, web, pwn, forense, criptografía, etc.
-
-- [TryHackMe – Mr Robot Walkthrough](ctf/mr-robot-tryhackme.md)
-
----
-
-## 🔍 Detección y análisis de amenazas
-
-> Scripts, reportes y técnicas para detectar actividad sospechosa o malware.
-
-- [YARA Rules – Detección de ransomware](deteccion/yara_ransomware.md)
-- [Detección de keyloggers en procesos activos](deteccion/detector_keylogger.sh)
-- [Análisis de logs con ELK Stack](deteccion/elk_logs.md)
-
----
-
-## ⚙️ Scripting y automatización
-
-> Scripts que automatizan tareas de ciberseguridad (Bash, Python, PowerShell).
-
-- [`portscan.py`](scripting/portscan.py) – Escaneo simple de puertos
-- [`wifi_sniffer.sh`](scripting/wifi_sniffer.sh) – Escáner de redes Wi-Fi
-- [`whois_lookup.ps1`](scripting/whois_lookup.ps1) – Consulta de dominios (PowerShell)
+## Overthewire
+>bandit33
 
 ---
 
