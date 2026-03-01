@@ -27,18 +27,35 @@ El servidor requiere que enviemos un archivo específico al repositorio remoto p
 ### 🛠️ Paso a Paso para la Resolución
 
 #### 1. Clonar el repositorio
-Primero, descargamos el repositorio a nuestra máquina local y
-como buen practica creamos una carpeta en el cual clonaremos "repo"<br>
-`git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
-cd repo`
+
+Primero, descargamos el repositorio a nuestra máquina local y como buena práctica creamos una carpeta donde clonaremos `repo`.
+
+```bash
+git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+cd repo
+```
+
+---
 
 #### 2. Creación del archivo de acceso
-Creamos el archivo key.txt con el contenido exacto requerido por el reto<br>
-`echo "May I come in?" > key.txt`
+
+Creamos el archivo `key.txt` con el contenido exacto requerido por el reto.
+
+```bash
+echo "May I come in?" > key.txt
+```
+
+---
 
 #### 3. Forzar el seguimiento del archivo (Bypass de .gitignore)
-Al intentar añadir el archivo con git add, el sistema lo rechazará porque existe una regla en el archivo .gitignore que ignora todos los archivos .txt. Para saltarnos esta restricción, usamos el parámetro force (-f)<br>
-`git add -f key.txt`
+
+Al intentar añadir el archivo con `git add`, el sistema lo rechazará porque existe una regla en el archivo `.gitignore` que ignora todos los archivos `.txt`.  
+
+Para saltarnos esta restricción usamos el parámetro `-f` (force).
+
+```bash
+git add -f key.txt
+```
 
 #### 4. Confirmación y envío (Push)
 
