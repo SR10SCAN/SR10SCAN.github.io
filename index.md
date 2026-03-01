@@ -38,16 +38,16 @@ Creamos el archivo key.txt con el contenido exacto requerido por el reto:
 
 #### 3. Forzar el seguimiento del archivo (Bypass de .gitignore)
 Al intentar añadir el archivo con git add, el sistema lo rechazará porque existe una regla en el archivo .gitignore que ignora todos los archivos .txt. Para saltarnos esta restricción, usamos el parámetro force (-f):
->git add -f key.txt
+`git add -f key.txt`
 
-### 4. Confirmación y envío (Push)
+#### 4. Confirmación y envío (Push)
 Realizamos el commit local y subimos los cambios al servidor.
 Nota: La contraseña para el comando push es la misma que usamos para clonar: #>f***2xb7bRyFmAvQYQGEqsbhVy*****y
 
 >git commit -m "Añadiendo la llave de acceso"
 >git push origin master
 ---
-### finalmente tendremos la contraseña:'3****hqyAlVBEZpVb6LYStshZoq****K'
+### finalmente tendremos la contraseña:3****hqyAlVBEZpVb6LYStshZoq****K
 Aunque el comando git push devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor
 ---
 ## 📓 Blog Técnico
