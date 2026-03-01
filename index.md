@@ -47,7 +47,7 @@ Nota: La contraseña para el comando push es la misma que usamos para clonar: f*
 `git commit -m "Añadiendo la llave de acceso"`<br>
 `git push origin master`
 ---
-### finalmente tendremos la contraseña:3****hqyAlVBEZpVb6LYStshZoq****K<br>
+### finalmente tendremos la contraseña:3*9RfhqyAlVBEZpVb6LYStshZoq****K<br>
 Aunque el comando git push devuelva un error al final, la contraseña aparecerá en los mensajes del terminal. Esto se debe a la configuración del servidor
 ---
 ## 📓 Blog Técnico
